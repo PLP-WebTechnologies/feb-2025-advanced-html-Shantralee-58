@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Elements and Forms</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML5 Elements and Forms</h1>
+    
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List</h2>
+    <ol type="I">
+        <li>Software Engineering</li>
+        <li>Software Testing</li>
+        <li>Software Development</li>
+        <li>Web Design</li>
+        <li>Web Development</li>
+    </ol>
+    
+    <!-- External Image -->
+    <h2>External Image</h2>
+    <img src="https://images.app.goo.gl/qgKQGNxqrnkGTMyt7" alt="software engineering from Pexels" width="600">
+    
+    <!-- Contacts Table -->
+    <h2>Contacts Table</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>ID Number</th>
+            <th>Email Address</th>
+        </tr>
+        <tr>
+            <td>Idah Khumalo</td>
+            <td>15th Street</td>
+            <td>+27788905461</td>
+            <td>idah@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Zanele Mnguni</td>
+            <td>234 Fox Ave</td>
+            <td>+27719990876</td>
+            <td>zanele@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Simphiwe Kunene</td>
+            <td>78 eleventh Str</td>
+            <td>+27880974443</td>
+            <td>skunene@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Vanessa Brown</td>
+            <td>134 Holkam Rd</td>
+            <td>+27660998211</td>
+            <td>vanessabrown@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Success Mahlangu</td>
+            <td>640 Bree Str</td>
+            <td>+27790412230</td>
+            <td>successm@gmail.com</td>
+        </tr>
+    </table>
+    
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a strong password" required><br><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required> <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required> <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other" required> <label for="other">Other</label><br><br>
+        
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="sa">South Africa</option>
+            <option value="us">United States</option>
+            <option value="canada">Canada</option>
+            <option value="china">China</option>
+        </select><br><br>
+        
+        <label for="interests">Interests:</label><br>
+        <input type="checkbox" id="java" name="interests" value="java"> <label for="java">Java</label><br>
+        <input type="checkbox" id="python" name="interests" value="python"> <label for="python">Python</label><br>
+        <input type="checkbox" id="dart" name="interests" value="dart"> <label for="dart">Dart</label><br><br>
+        
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
